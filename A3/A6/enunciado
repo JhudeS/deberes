@@ -1,0 +1,100 @@
+Mòdul 0613 · Desenvolupament web en entorn servidor
+Exercicis de pràctica — Activitat A6
+Bucles (for / while / do-while) i arrays
+
+Nota: aquesta activitat és de pràctica, no avaluable. Fes cada exercici en un fitxer .php diferent.
+
+BUCLES
+
+Exercici 1 — Comptant de 100 a 1
+Fes servir un for per mostrar els números de 100 a 1, en ordre descendent.
+
+Exercici 2 — Suma de múltiples de 3
+Fes servir un for per sumar tots els múltiples de 3 entre 1 i 50, i mostra el resultat final.
+
+Exercici 3 — Factorial d'un número
+Declara $numero = 5. Fes servir un while per calcular el seu factorial (5×4×3×2×1) i mostra el resultat.
+
+Exercici 4 — Compte enrere d'un coet
+Fes servir un do-while per mostrar el compte enrere d'un coet, del 10 fins al 0, i acaba amb el missatge "Enlairament!".
+
+Exercici 5 — Només els números senars
+Fes servir un for per mostrar únicament els números senars entre l'1 i el 30.
+
+Exercici 6 — Bucle amb centinella
+Simula la introducció de números un a un guardant-los en variables consecutives ($n1, $n2, $n3...) i fes servir un while que s'aturi quan trobi el valor 0 (posa'l tu com a últim valor de la seqüència).
+
+Exercici 7 — El més gran de 5 números
+Declara 5 variables numèriques ($n1 a $n5) amb valors diferents. Fes servir un bucle (pots recórrer-les amb un array i un foreach, o comparar-les una a una) per trobar i mostrar la més gran.
+
+Exercici 8 — Taula de multiplicar completa (bucles niats)
+Fes servir un for dins d'un altre for per mostrar les taules de multiplicar del 2 al 5 (per cada número, les multiplicacions de l'1 al 10).
+
+Exercici 9 — Triangle d'asteriscos
+Fes servir bucles niats (un for dins d'un altre) per dibuixar un triangle d'asteriscos de 5 files (fila 1: un asterisc, fila 2: dos asteriscos, etc.).
+
+Exercici 10 — Barra de progrés simulada
+Fes servir un for que vagi de 0 a 100 de 10 en 10, mostrant a cada volta "Carregant... X%".
+
+Exercici 11 — Dividint entre 2 fins arribar a 1
+Declara $numero = 100. Fes servir un while per anar dividint-lo entre 2 (arrodonint cap avall) fins que arribi a 1, mostrant el valor a cada pas i comptant quantes divisions han calgut.
+
+Exercici 12 — Menú repetit 3 vegades
+Fes servir un do-while amb un comptador per mostrar tres vegades seguides el text "Aquest és el menú del dia", numerant cada aparició (1, 2, 3).
+
+Exercici 13 — For amb pas personalitzat
+Fes servir un for per mostrar els números de 50 a 0, de 5 en 5 (50, 45, 40...).
+
+Exercici 14 — Mitjana de notes introduïdes
+Declara 4 variables amb notes ($nota1 a $nota4). Fes servir un bucle per sumar-les totes i, al final, calcula i mostra la mitjana.
+
+Exercici 15 — El primer múltiple de 7 més gran que 100
+Fes servir un while que comenci a partir de 101 i vagi provant números fins trobar el primer que sigui múltiple de 7, mostrant-lo al final.
+
+ARRAYS
+
+Exercici 16 — Comptant els parells d'un array
+Crea un array $numeros amb almenys 8 valors. Fes servir un foreach per comptar quants d'ells són parells, i mostra el total.
+
+Exercici 17 — Total d'una llista de preus
+Crea un array $preus amb 6 valors decimals. Fes servir un foreach per sumar-los tots i mostra el total.
+
+Exercici 18 — El valor més gran d'un array
+Crea un array $numeros amb almenys 6 valors. Fes servir un foreach per trobar i mostrar el valor més gran (sense fer servir la funció max()).
+
+Exercici 19 — El valor més petit d'un array
+Igual que l'exercici anterior, però trobant el valor més petit (sense fer servir min()).
+
+Exercici 20 — Fitxa d'un producte
+Crea un array associatiu $producte amb les claus 'nom', 'preu' i 'estoc'. Recorre'l amb foreach i mostra una petita fitxa amb tota la informació.
+
+Exercici 21 — Total d'una llista de productes
+Crea un array multidimensional amb 4 productes, cadascun amb 'nom' i 'preu'. Fes servir un foreach per calcular i mostrar el preu total de tots junts.
+
+Exercici 22 — Comptant elements a mà
+Crea un array $colors amb els elements que vulguis. Fes servir un foreach i una variable comptadora per comptar quants elements té l'array, sense fer servir la funció count().
+
+Exercici 23 — Mitjana de notes per assignatura
+Crea un array associatiu amb 5 assignatures i les seves notes corresponents. Fes servir un foreach per sumar-les i calcular la mitjana final.
+
+Exercici 24 — Buscant un valor dins un array
+Crea un array $fruites. Declara una variable $buscada amb el nom d'una fruita. Fes servir un foreach i una variable booleana per comprovar si $buscada es troba dins l'array, i mostra el resultat (sense fer servir in_array()).
+
+Exercici 25 — Només els dies feiners
+Crea un array $dies amb els 7 dies de la setmana (índexs 0 a 6, on 0 és dilluns). Fes servir un for que recorri només els índexs de dilluns a divendres (0 a 4), mostrant-los.
+
+Exercici 26 — Mostrant un array a l'inrevés
+Crea un array $numeros amb 6 elements. Fes servir un for (no un foreach) que recorri l'array començant per l'últim índex i acabant pel primer.
+
+Exercici 27 — Alumnes aprovats
+Crea un array multidimensional de 5 alumnes, cadascun amb 'nom' i 'nota'. Fes servir un foreach combinat amb un if per mostrar només els noms dels alumnes amb nota igual o superior a 5.
+
+Exercici 28 — Suma només dels positius
+Crea un array $numeros que contingui valors positius i negatius barrejats. Fes servir un foreach combinat amb un if per sumar només els valors positius, i mostra el resultat.
+
+Exercici 29 — El teu carret de la compra
+Crea un array associatiu $carret on cada clau sigui el nom d'un producte i el valor la quantitat (per exemple 'poma' => 3). Recorre'l amb foreach($carret as $clau => $valor) mostrant "[quantitat] x [producte]" per a cada línia.
+
+Exercici 30 — Omplint un array dins d'un bucle
+Crea un array buit $quadrats = []. Fes servir un for de l'1 al 10 que, a cada volta, afegeixi a l'array el quadrat del número actual (fent servir $quadrats[] = ...). Un cop ple, recorre'l amb foreach per mostrar tots els resultats.
+
