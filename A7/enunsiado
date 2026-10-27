@@ -1,0 +1,70 @@
+Mòdul 0613 · Desenvolupament web en entorn servidor
+Exercicis de pràctica — Activitat A7
+Funcions i cadenes de caràcters
+
+Nota: aquesta activitat és de pràctica, no avaluable. Fes cada exercici en un fitxer .php diferent.
+
+FUNCIONS
+
+Exercici 1 — Perímetre d'un rectangle
+Crea una funció calculaPerimetre($base, $alcada) que retorni el perímetre (2×base + 2×alçada). Crida-la amb dos valors diferents i mostra els resultats.
+
+Exercici 2 — Una funció que retorna un booleà
+Crea una funció esMajorEdat($edat) que retorni true o false segons si l'edat és 18 o més. Crida-la amb tres edats diferents i mostra els resultats.
+
+Exercici 3 — Duplicant un valor per referència
+Crea una funció duplica(&$num) que dupliqui el valor de la variable rebuda per referència (sense fer servir return). Declara una variable, crida la funció, i comprova que el seu valor ha canviat.
+
+Exercici 4 — Funció amb tipatge complet
+Crea una funció suma(int $a, int $b): int que sumi dos enters. Prova de cridar-la també amb decimals i observa (amb un comentari) què fa PHP per defecte.
+
+Exercici 5 — Retorn nullable
+Crea una funció buscaAlumne($id): ?string que retorni el nom d'un alumne si l'$id és 1 (inventa't el nom), o null en qualsevol altre cas. Crida-la amb dos valors diferents d'$id i mostra els resultats (fixa't com es mostra null amb un echo).
+
+Exercici 6 — Retorn amb diversos tipus possibles
+Crea una funció valoraNota($nota): int|string que retorni la mateixa nota (com a int) si és 5 o més, o el text "Suspès" (com a string) si és menor. Crida-la amb dos valors diferents.
+
+Exercici 7 — Arguments amb nom
+Crea una funció creaFitxa($nom = "Anònim", $edat = 18, $ciutat = "Desconeguda"). Crida-la una vegada passant només el paràmetre $ciutat pel seu nom, deixant els altres dos amb el valor per defecte.
+
+Exercici 8 — Accedint a una variable global
+Declara una variable $nomEmpresa fora de qualsevol funció. Crea una funció mostraCapçalera() que faci servir $GLOBALS per mostrar-la. Comenta per què $GLOBALS és preferible a la paraula clau global.
+
+Exercici 9 — Diversos paràmetres amb un de per defecte
+Crea una funció calculaTotal($preu, $unitats, $iva = 0.21) que calculi el total amb IVA d'una compra. Crida-la un cop passant els tres paràmetres, i un altre cop deixant l'IVA per defecte.
+
+Exercici 10 — Una funció que retorna un array
+Crea una funció generaParell($a, $b) que retorni un array amb els dos valors rebuts. Crida-la, guarda el resultat en una variable, i recorre l'array amb foreach per mostrar-ne el contingut.
+
+CADENES DE CARÀCTERS
+
+Exercici 11 — Fitxa de producte amb heredoc
+Declara variables amb el nom, preu i descripció d'un producte. Fes servir la sintaxi heredoc per mostrar una petita fitxa que combini text fix i les variables.
+
+Exercici 12 — Text literal amb nowdoc
+Fes servir la sintaxi nowdoc per mostrar un exemple de codi (per exemple unes línies de PHP) tal qual, sense que cap $ es interpreti com a variable.
+
+Exercici 13 — Escapant caràcters
+Escriu una única cadena (amb cometes dobles) que mostri: el preu és de 20$ i la frase "oferta especial" (amb les cometes literals dins del text), fent servir els escapaments necessaris.
+
+Exercici 14 — Normalitzant un nom d'usuari
+Declara una variable amb un nom d'usuari escrit de forma inconsistent (per exemple "jOaN.perez"). Mostra'l tot en majúscules amb strtoupper() i tot en minúscules amb strtolower().
+
+Exercici 15 — Formatant un títol
+Declara una variable amb un títol en minúscules (per exemple "el meu primer article"). Mostra'l amb la primera lletra en majúscula (ucfirst()) i també amb la primera lletra de cada paraula en majúscula (ucwords()).
+
+Exercici 16 — Netejant espais
+Declara una variable amb espais de sobra al principi i al final (per exemple "   Hola   "). Mostra la seva longitud abans i després d'aplicar trim(), per comprovar la diferència.
+
+Exercici 17 — Censurant una paraula
+Declara una frase que contingui una paraula concreta (per exemple "contrasenya"). Fes servir str_replace() per substituir aquesta paraula per asteriscos ("*****"), i mostra el resultat.
+
+Exercici 18 — Extraient una part d'un text
+Declara una variable amb el teu nom complet. Fes servir substr() per mostrar només els primers 3 caràcters.
+
+Exercici 19 — Generant una línia separadora
+Fes servir str_repeat() per generar i mostrar una línia composta pel caràcter "-" repetit 30 vegades, per fer-la servir com a separador visual.
+
+Exercici 20 — Comparant sense distingir majúscules
+Declara dues variables amb un mateix nom d'usuari escrit amb majúscules diferents (per exemple "Marta" i "marta"). Compara-les amb strcmp() i amb strcasecmp(), i mostra els dos resultats per comprovar la diferència.
+
